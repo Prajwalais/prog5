@@ -12,3 +12,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def main():
+    initial_balance = float(input("Enter initial balance: ₹"))
+    deposit_amount = float(input("Enter deposit amount: ₹"))
+    
+    new_balance = initial_balance + deposit_amount
+    
+    print(f"Initial Balance: ₹{initial_balance}")
+    print(f"Deposit: ₹{deposit_amount}")
+    print(f"New Balance after deposit: ₹{new_balance}")
+
+    withdraw_amount = float(input("Enter withdraw amount: ₹"))
+    final_balance = new_balance - withdraw_amount
+    
+    print(f"Withdraw: ₹{withdraw_amount}")
+    print(f"Final Balance: ₹{final_balance}")
+
+if __name__ == "__main__":
+    main()
